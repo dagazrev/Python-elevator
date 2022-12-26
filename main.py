@@ -9,9 +9,9 @@ from screen_info import ScreenInfo
 
 # max number of calls
 
-nb_calls = 10
+nb_calls = 10000
 
-acceleration = 1
+acceleration = 0.01
 
 def GUI_th(window):
     window.draw()

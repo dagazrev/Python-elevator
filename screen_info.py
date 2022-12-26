@@ -125,6 +125,14 @@ class ScreenInfo:
         else:
             self.window.screen.blit(self.img_emergency_button, (bt_pos[0] - (self.i_button_size[0])/2, bt_pos[1] + self.i_button_size[1]/1.25))
         
+        # number of people
+        img = font.render('Number of people %d' % self.people_number, True, (0,0,0))
+        self.window.screen.blit(img, (400, 20))
+
+        # People weight
+        img = font.render('Actual weight %d' % self.people_weight, True, (0,0,0))
+        self.window.screen.blit(img, (400, 40))
+
     def print_buttons(self):
         for i in range(self.selected_buttons):
             if self.selected_buttons[i] == 1:
